@@ -7,24 +7,35 @@
     </head>
     <body>
         <div class="keys">
-            <div class="key">
+            <div data-keycode="65" class="key">
                 <kbd>A</kbd>
             </div>
-            <div class="key">
+            <div data-keycode="66" class="key">
                 <kbd>B</kbd>
             </div>
-            <div class="key">
+            <div data-keycode="67" class="key">
                 <kbd>C</kbd>
             </div>
-            <div class="key">
+            <div data-keycode="68" class="key">
                 <kbd>D</kbd>
             </div>
-            <div class="key">
+            <div data-keycode="69" class="key">
                 <kbd>E</kbd>
             </div>
-            <div class="key">
+            <div data-keycode="70" class="key">
                 <kbd>F</kbd>
             </div>
         </div>
+        <div id="errorDiv"></div>
+
+        <audio data-keycode="65" src="sounds/a.mp3"></audio>
+        <audio data-keycode="66" src="sounds/b.mp3"></audio>
+        <audio data-keycode="67" src="sounds/c.mp3"></audio>
+        <audio data-keycode="68" src="sounds/d.mp3"></audio>
+        <audio data-keycode="69" src="sounds/e.mp3"></audio>
+        <audio data-keycode="70" src="sounds/f.mp3"></audio>
+        <audio id="error-sound" src="sounds/openhat.wav"></audio>
+
+        <script src="script.js"></script>
     </body>
 </html>
